@@ -61,6 +61,12 @@ public class MovieRepository {
         if(directorMovieMapping.containsKey(director)) moviesList = directorMovieMapping.get(director);
         return moviesList;
     }
+    //Mock_interview_fiona code added
+    public List<String> findDirectorNameFromMovieName(String movie){
+        List<String> directorName = new ArrayList<>();
+        if(directorMovieMapping.containsKey(movie)) directorName = directorMovieMapping.get(movie);
+        return directorName;
+    }
 
     public List<String> findAllMovies(){
         return new ArrayList<>(movieMap.keySet());

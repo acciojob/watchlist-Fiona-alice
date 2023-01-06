@@ -33,6 +33,10 @@ public class MovieService {
     public List<String> findMoviesFromDirector(String director){
         return movieRepository.findMoviesFromDirector(director);
     }
+    //Mock_interview_fiona code added
+    public List<String> findDirectorNameFromMovieName(String movie){
+        return movieRepository.findDirectorNameFromMovieName(movie);
+    }
 
     public List<String> findAllMovies(){
         return movieRepository.findAllMovies();
